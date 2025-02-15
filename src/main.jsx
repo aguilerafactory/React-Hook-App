@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { CallbackHook } from './06-memos/CallbackHook';
+import { Padre } from './07-tarea-memo/Padre';
 //import { FocusScreen } from './04-useRef/FocusScreen';
 //import { HooksApp } from './HooksApp';
 //import { CounterApp } from './01-useState/CounterApp';
@@ -11,10 +11,11 @@ import { CallbackHook } from './06-memos/CallbackHook';
 //import { Layout } from './05-useLayoutEffect/Layout';
 //import { Memorize } from './06-memos/Memorize';
 //import { MemorizeHook } from './06-memos/MemorizeHook';
+//import { CallbackHook } from './06-memos/CallbackHook';
+import './08-useReducer/intro-reducer';
 
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <CallbackHook />
-  </StrictMode>,
-)
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <Padre />
+//   </StrictMode>,
+// )
