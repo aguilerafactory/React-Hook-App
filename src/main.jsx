@@ -1,6 +1,8 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { TodoApp } from './08-useReducer/TodoApp';
+import { MainApp } from './09-useContext/MainApp';
+import { BrowserRouter } from 'react-router-dom';
+//import { TodoApp } from './08-useReducer/TodoApp';
 //import { FocusScreen } from './04-useRef/FocusScreen';
 //import { HooksApp } from './HooksApp';
 //import { CounterApp } from './01-useState/CounterApp';
@@ -16,7 +18,9 @@ import { TodoApp } from './08-useReducer/TodoApp';
 //import { Padre } from './07-tarea-memo/Padre';
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-    <TodoApp />
-  // </StrictMode>,
+  <BrowserRouter>
+    <StrictMode>
+      <MainApp />
+    </StrictMode>
+  </BrowserRouter>
 )
